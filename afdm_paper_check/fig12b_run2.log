@@ -1,0 +1,22 @@
+xi_nu=1 SNRd= 0 dB: Ideal=2.0154e-01  Est(SNRp=40)=2.2038e-01
+xi_nu=1 SNRd= 3 dB: Ideal=1.3631e-01  Est(SNRp=40)=1.5957e-01
+xi_nu=1 SNRd= 6 dB: Ideal=7.7829e-02  Est(SNRp=40)=1.0011e-01
+xi_nu=1 SNRd= 9 dB: Ideal=3.9628e-02  Est(SNRp=40)=5.5783e-02
+xi_nu=1 SNRd=12 dB: Ideal=1.6078e-02  Est(SNRp=40)=3.0178e-02
+xi_nu=1 SNRd=15 dB: Ideal=3.9225e-03  Est(SNRp=40)=8.5969e-03
+xi_nu=1 SNRd=18 dB: Ideal=8.8372e-04  Est(SNRp=40)=4.7674e-03
+xi_nu=4 SNRd= 0 dB: Ideal=2.0481e-01  Est(SNRp=40)=2.1804e-01
+xi_nu=4 SNRd= 3 dB: Ideal=1.3939e-01  Est(SNRp=40)=1.5283e-01
+xi_nu=4 SNRd= 6 dB: Ideal=7.6350e-02  Est(SNRp=40)=8.8966e-02
+xi_nu=4 SNRd= 9 dB: Ideal=3.9479e-02  Est(SNRp=40)=4.9702e-02
+xi_nu=4 SNRd=12 dB: Ideal=1.3371e-02  Est(SNRp=40)=1.7598e-02
+xi_nu=4 SNRd=15 dB: Ideal=2.7188e-03  Est(SNRp=40)=4.3296e-03
+xi_nu=4 SNRd=18 dB: Ideal=5.1210e-04  Est(SNRp=40)=1.1639e-03
+xi_nu=8 SNRd= 0 dB: Ideal=1.9620e-01  Est(SNRp=40)=2.0604e-01
+xi_nu=8 SNRd= 3 dB: Ideal=1.2678e-01  Est(SNRp=40)=1.3667e-01
+xi_nu=8 SNRd= 6 dB: Ideal=7.2036e-02  Est(SNRp=40)=8.0356e-02
+xi_nu=8 SNRd= 9 dB: Ideal=3.3232e-02  Est(SNRp=40)=3.8092e-02
+xi_nu=8 SNRd=12 dB: Ideal=9.1730e-03  Est(SNRp=40)=1.1730e-02
+xi_nu=8 SNRd=15 dB: Ideal=2.3664e-03  Est(SNRp=40)=2.9008e-03
+xi_nu=8 SNRd=18 dB: Ideal=3.9440e-04  Est(SNRp=40)=4.5802e-04
+=== DONE ===

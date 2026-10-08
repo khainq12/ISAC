@@ -1,0 +1,21 @@
+node_modules/
+__pycache__/
+~$*
+*.asv
+
+# Rendered page previews (regenerate with render_pages.py / Word COM)
+report_build/pages*/
+report_build/page-*.png
+report_build/preview_*.png
+report_build/repo_*.png
+afdm_paper_check/page-*.jpg
+afdm_paper_check/reportpage-*.jpg
+
+# Copyrighted source paper and crops of its figures: download it yourself (see HANDOFF.md)
+afdm_paper_check/afdm_paper.pdf
+afdm_paper_check/afdm_paper.txt
+afdm_paper_check/afdm_paper_ber.png
+afdm_paper_check/orig_*.jpg
+
+# Old reproduction report (may embed figure crops from the paper)
+afdm_paper_check/BaoCao_TaiHien_AFDM_Paper.*

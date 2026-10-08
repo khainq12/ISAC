@@ -1,0 +1,41 @@
+outdir = 'D:\doubly-dispersive-channel-simulation-main\report_build\';
+load([outdir 'full_snr_sweep_results.mat']);
+
+snrVec = results_snr.snrVec;
+wf = results_snr.waveformList; % RM, OFDM, OTFS, AFDM
+RangeNMSE = results_snr.RangeNMSE_mat;
+VelNMSE   = results_snr.VelNMSE_mat;
+
+% reorder to AFDM, OFDM, OTFS, RM to match existing figure legend convention
+order = [find(strcmp(wf,'AFDM')) find(strcmp(wf,'OFDM')) find(strcmp(wf,'OTFS')) find(strcmp(wf,'RM'))];
+names = {'AFDM','OFDM','OTFS','RM (tham chiếu)'};
+colors = [0.466 0.674 0.188; 0 0.447 0.741; 0.85 0.325 0.098; 0.5 0.5 0.5];
+mk = {'^-','s-','d-','o-'};
+
+floorVal = 1e-4;
+
+plotOne(snrVec, RangeNMSE, order, names, colors, mk, floorVal, ...
+    'Range NMSE (chuẩn hóa)', 'Sai số ước lượng khoảng cách (NMSE) theo SNR - dải đầy đủ', outdir, 'repo_rangenmse_full_v1.png');
+plotOne(snrVec, VelNMSE, order, names, colors, mk, floorVal, ...
+    'Velocity NMSE (chuẩn hóa)', 'Sai số ước lượng vận tốc (NMSE) theo SNR - dải đầy đủ', outdir, 'repo_velnmse_full_v1.png');
+
+fprintf('=== DONE ===\n');
+
+function plotOne(snrVec, dataMat, order, names, colors, mk, floorVal, yLbl, titleStr, outdir, fname)
+    fig = figure('Position',[100 100 680 430],'Visible','off');
+    hold on;
+    for i = 1:4
+        y = dataMat(order(i), :);
+        yPlot = max(y, floorVal); % clamp exact-zero for log display
+        plot(snrVec, yPlot, mk{i}, 'Color', colors(i,:), 'LineWidth', 1.8, 'MarkerSize', 7, 'DisplayName', names{i});
+    end
+    set(gca, 'YScale', 'log');
+    xline(2.5, '--', 'Color', [0.4 0.4 0.4], 'LineWidth', 1, 'HandleVisibility','off');
+    text(3, floorVal*3, '0 lỗi / 1000 lần MC (SNR \geq 5dB)', 'FontSize', 8.5, 'Color', [0.35 0.35 0.35]);
+    hold off; grid on; box on;
+    xlabel('SNR [dB]'); ylabel(yLbl);
+    title(titleStr);
+    legend('Location','northeast','FontSize',9);
+    ylim([floorVal/2, 1]);
+    saveas(fig, [outdir fname]);
+end

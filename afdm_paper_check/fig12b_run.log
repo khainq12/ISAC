@@ -1,0 +1,29 @@
+xi_nu=1 SNRd= 0 dB: Ideal=2.0914e-01  Est(SNRp=40)=2.2174e-01
+xi_nu=1 SNRd= 3 dB: Ideal=1.4578e-01  Est(SNRp=40)=1.6045e-01
+xi_nu=1 SNRd= 6 dB: Ideal=8.9357e-02  Est(SNRp=40)=1.0165e-01
+xi_nu=1 SNRd= 9 dB: Ideal=5.1116e-02  Est(SNRp=40)=6.1969e-02
+xi_nu=1 SNRd=12 dB: Ideal=2.6116e-02  Est(SNRp=40)=3.3442e-02
+xi_nu=1 SNRd=15 dB: Ideal=1.3721e-02  Est(SNRp=40)=1.8000e-02
+xi_nu=1 SNRd=18 dB: Ideal=9.9380e-03  Est(SNRp=40)=1.2938e-02
+xi_nu=4 SNRd= 0 dB: Ideal=2.2034e-01  Est(SNRp=40)=2.3020e-01
+xi_nu=4 SNRd= 3 dB: Ideal=1.5962e-01  Est(SNRp=40)=1.6975e-01
+xi_nu=4 SNRd= 6 dB: Ideal=1.0031e-01  Est(SNRp=40)=1.1016e-01
+xi_nu=4 SNRd= 9 dB: Ideal=6.4702e-02  Est(SNRp=40)=7.2067e-02
+xi_nu=4 SNRd=12 dB: Ideal=3.6788e-02  Est(SNRp=40)=4.0857e-02
+xi_nu=4 SNRd=15 dB: Ideal=2.4832e-02  Est(SNRp=40)=2.8529e-02
+xi_nu=4 SNRd=18 dB: Ideal=2.1024e-02  Est(SNRp=40)=2.2654e-02
+xi_nu=8 SNRd= 0 dB: Ideal=2.3258e-01  Est(SNRp=40)=2.4130e-01
+xi_nu=8 SNRd= 3 dB: Ideal=1.7090e-01  Est(SNRp=40)=1.7869e-01
+xi_nu=8 SNRd= 6 dB: Ideal=1.2316e-01  Est(SNRp=40)=1.3064e-01
+xi_nu=8 SNRd= 9 dB: Ideal=8.5903e-02  Est(SNRp=40)=9.1310e-02
+xi_nu=8 SNRd=12 dB: Ideal=5.7036e-02  Est(SNRp=40)=6.0929e-02
+xi_nu=8 SNRd=15 dB: Ideal=4.2366e-02  Est(SNRp=40)=4.5178e-02
+xi_nu=8 SNRd=18 dB: Ideal=3.7392e-02  Est(SNRp=40)=3.9351e-02
+{Error using semilogy
+Invalid color, marker, or line style.
+
+Error in fig12b_xinu_effect (line 77)
+    semilogy(SNRd_dB, BER_ideal(ix,:), [mk{ix} '--'], 'Color', clr{ix}, 'DisplayName', sprintf('Ideal, \\xi_\\nu=%d', xiList(ix)));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

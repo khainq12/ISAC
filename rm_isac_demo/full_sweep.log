@@ -1,0 +1,53 @@
+================ Monte Carlo  ================
+L = 256, M = 16, N = 16
+SNR  = [-10  -5   0   5  10  15  20] dB
+Monte Carlo  = 1000
+=====================================================
+
+---- SNR = -10 dB ----
+RM    : BER = 3.3558e-01, Range-NMSE = 3.1705e-01, Vel-NMSE = 1.0594e+00
+OFDM  : BER = 3.3477e-01, Range-NMSE = 3.1983e-01, Vel-NMSE = 9.4424e-01
+OTFS  : BER = 3.3531e-01, Range-NMSE = 3.1958e-01, Vel-NMSE = 9.5640e-01
+AFDM  : BER = 3.3465e-01, Range-NMSE = 3.2633e-01, Vel-NMSE = 9.6560e-01
+
+---- SNR = -5 dB ----
+RM    : BER = 2.4076e-01, Range-NMSE = 1.2907e-01, Vel-NMSE = 4.2188e-01
+OFDM  : BER = 2.4037e-01, Range-NMSE = 1.2760e-01, Vel-NMSE = 4.0772e-01
+OTFS  : BER = 2.4071e-01, Range-NMSE = 1.1224e-01, Vel-NMSE = 3.5656e-01
+AFDM  : BER = 2.3971e-01, Range-NMSE = 1.3652e-01, Vel-NMSE = 3.9876e-01
+
+---- SNR =  0 dB ----
+RM    : BER = 1.3182e-01, Range-NMSE = 2.9312e-03, Vel-NMSE = 1.2280e-02
+OFDM  : BER = 1.3195e-01, Range-NMSE = 5.5358e-03, Vel-NMSE = 1.1320e-02
+OTFS  : BER = 1.3226e-01, Range-NMSE = 4.1862e-03, Vel-NMSE = 1.1640e-02
+AFDM  : BER = 1.3184e-01, Range-NMSE = 2.4756e-03, Vel-NMSE = 3.6800e-03
+
+---- SNR =  5 dB ----
+RM    : BER = 4.4643e-02, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OFDM  : BER = 4.5756e-02, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OTFS  : BER = 4.5023e-02, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+AFDM  : BER = 4.5104e-02, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+
+---- SNR = 10 dB ----
+RM    : BER = 8.0098e-03, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OFDM  : BER = 1.0660e-02, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OTFS  : BER = 7.8262e-03, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+AFDM  : BER = 7.7520e-03, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+
+---- SNR = 15 dB ----
+RM    : BER = 8.2617e-04, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OFDM  : BER = 3.0996e-03, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OTFS  : BER = 7.1484e-04, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+AFDM  : BER = 7.2852e-04, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+
+---- SNR = 20 dB ----
+RM    : BER = 7.0312e-05, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OFDM  : BER = 9.5508e-04, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+OTFS  : BER = 3.5156e-05, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+AFDM  : BER = 3.7109e-05, Range-NMSE = 0.0000e+00, Vel-NMSE = 0.0000e+00
+
+================  ================
+results_isac_demo_snr
+params_isac_demo_snr
+==========================================
+=== SAVED ===
